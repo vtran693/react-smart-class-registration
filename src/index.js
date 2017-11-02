@@ -88,6 +88,9 @@ class Game extends React.Component {
   }
 }
 
+class 
+
+
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -109,7 +112,13 @@ function calculateWinner(squares) {
 }
 // ========================================
 
+// ReactDOM.render(
+//   <Game />,
+//   document.getElementById('root')
+// );
+
+
 ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
+  <Login
+
 );
