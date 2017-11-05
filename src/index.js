@@ -1,6 +1,7 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
+import {ClassRegistration} from './components/ClassRegistration.js';
 
 function Square(props) {
   return (
@@ -88,22 +89,22 @@ class Game extends React.Component {
   }
 }
 
-class Login extends React.Component{
-  constructor(props) {
-    super(props);
-    this.state = {
-      isLogin : true,
-    };
-  }
+// class Login extends React.Component{
+//   constructor(props) {
+//     super(props);
+//     this.state = {
+//       isLogin : true,
+//     };
+//   }
 
-  render(){
-    return(    
-      <button className="square" onClick={props.onClick}>
-      {props.value}
-      </button>
-    ) ;
-  }
-}
+//   render(){
+//     return(    
+//       <button className="square" onClick={props.onClick}>
+//       {props.value}
+//       </button>
+//     ) ;
+//   }
+// }
 
 
 function calculateWinner(squares) {
@@ -134,6 +135,6 @@ function calculateWinner(squares) {
 
 
 ReactDOM.render(
-  <Login/>,
+  <ClassRegistration/>,
   document.getElementById('root')
 );
