@@ -88,7 +88,22 @@ class Game extends React.Component {
   }
 }
 
-class 
+class Login extends React.Component{
+  constructor(props) {
+    super(props);
+    this.state = {
+      isLogin : true,
+    };
+  }
+
+  render(){
+    return(    
+      <button className="square" onClick={props.onClick}>
+      {props.value}
+      </button>
+    ) ;
+  }
+}
 
 
 function calculateWinner(squares) {
@@ -119,6 +134,6 @@ function calculateWinner(squares) {
 
 
 ReactDOM.render(
-  <Login
-
+  <Login/>,
+  document.getElementById('root')
 );
